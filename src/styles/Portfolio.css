@@ -1,0 +1,39 @@
+.grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 25px;
+  justify-content: center;
+}
+
+.grid > .item {
+  text-align: center; /* Untuk memastikan judul berada di tengah */
+}
+
+.grid > .item > a > img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek hover */
+}
+
+.grid > .item > a > img:hover {
+  transform: scale(1.05); /* Memperbesar sedikit gambar saat hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
+}
+
+.item-title {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 45% 45%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 100%; /* 1 kolom untuk layar kecil */
+  }
+}

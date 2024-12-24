@@ -1,0 +1,34 @@
+#detail-portfolio > .wrapper {
+    width: 60%;
+}
+
+#detail-portfolio > .wrapper > img {
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#detail-portfolio > .wrapper > p.skill {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #222831;
+}
+
+/* Tambahan untuk tombol GitHub */
+#detail-portfolio > .wrapper > .github-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #24292e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#detail-portfolio > .wrapper > .github-button:hover {
+    background-color: #0366d6;
+}
